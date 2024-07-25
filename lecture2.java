@@ -1,8 +1,16 @@
+import java.util.Scanner;
 public class lecture2{
     public static void main(String[] args){
-        int a = 20;
-        int b=10;
-        int sum = a+b;
-        System.out.println(sum);
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        
+    if (x>y){
+        System.out.println("x is greater ");
+    }else if(x==y){
+        System.out.println("equal");
+    }else{
+        System.out.println("y is greater");
     }
+}
 }
