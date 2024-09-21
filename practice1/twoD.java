@@ -1,4 +1,4 @@
-package practice;
+package practice1;
 import java.util.Scanner;
 public class twoD {
         public static void main(String[] args) {
@@ -27,3 +27,4 @@ public class twoD {
         sc.close();
     }
 }
+

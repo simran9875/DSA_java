@@ -1,4 +1,4 @@
-package practice;
+package practice1;
 import java.util.Scanner;
 public class part1 {
 
@@ -93,3 +93,4 @@ public class part1 {
         sc.close();
     }
 }
+

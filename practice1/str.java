@@ -1,4 +1,4 @@
-package practice;
+package practice1;
 
 public class str {
     public static void main(String[] args) {
@@ -45,3 +45,4 @@ public class str {
     }
 
     }
+

@@ -1,5 +1,7 @@
+package practice2;
+
 import java.util.Scanner;
-public class practice{
+public class prime{
     public static void main(String[] args){
         // PRIME NUMBER
 
@@ -12,7 +14,6 @@ public class practice{
         // close();
 
         
-
         // DO WHILE WITH LOGIC
         // int input=0; 
     //     do {
@@ -191,8 +192,5 @@ public class practice{
         //     default:System.out.println("invalid");
             sc.close();
 
+    }
 }
-
-}
-    
-

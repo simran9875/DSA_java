@@ -1,7 +1,7 @@
-package practice;
+package practice1;
 
 public class pattern {
-    public static void main(String[] args) {
+public static void main(String[] args) {
         // int n =10;
 //           0 
 //         9 0 9 
@@ -410,5 +410,6 @@ public class pattern {
         //         System.out.print("* ");
         //     }System.out.println();
         // }
-    }
-    }
+        }
+}
+

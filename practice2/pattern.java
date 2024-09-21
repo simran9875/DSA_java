@@ -1,3 +1,5 @@
+package practice2;
+
 // import java.util.Scanner;
 public class pattern {
     public static void main(String[] args) {

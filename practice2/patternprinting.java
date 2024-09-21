@@ -1,3 +1,5 @@
+package practice2;
+
 public class patternprinting {
     public static void main(String[] args) {
         int n=5;
@@ -29,3 +31,4 @@ public class patternprinting {
     }
 
 }
+

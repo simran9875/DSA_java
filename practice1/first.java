@@ -1,25 +1,25 @@
-package practice;
+package practice1;
 
 public class first {
     public static void main(String[] args) {
         // int n =5;
 
-        // int n = 4;
+        int n = 4;
 //          1
 //         1  1
 //       1  2  1
 //     1  3  3  1
 //    1  4  6  4  1
-        // for (int i = 0;i<=n;i++){
-        //     for (int k = 0;k<=(n-i);k++){
-        //         System.out.print("  ");
-        //     } int num=1;
-        //     for (int j=0;j<=i;j++){
-        //         System.out.print(num+"  ");
-        //         num=num*(i - j) / (j + 1);
-        //         // System.out.print(num+"  ");
-        //     }System.out.println();
-        // }
+        for (int i = 0;i<=n;i++){
+            for (int k = 0;k<=(n-i);k++){
+                System.out.print("  ");
+            } int num=1;
+            for (int j=0;j<=i;j++){
+                System.out.print(num+"  ");
+                num=num*(i - j) / (j + 1);
+                // System.out.print(num+"  ");
+            }System.out.println();
+        }
         // 1
         // 12
         // 123
@@ -210,4 +210,3 @@ public class first {
     // }
 }
 }
-

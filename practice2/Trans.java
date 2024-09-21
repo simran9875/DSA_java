@@ -1,6 +1,6 @@
 package practice2;
 
-public class transpose {
+public class Trans {
     static void display(int [][]arr){
         for (int i = 0;i<arr.length;i++){
             for (int j =0;j<arr[0].length;j++){
@@ -44,6 +44,15 @@ public class transpose {
             }
         }
     }
+    
+    // static String addStrings(String num1, String num2) {
+    //     String sum ="";
+    //   for (int i =num1.length()-1;i>=0;i--){
+    //     for (int j =num2.length()-1;j>=0;j--){
+    //        sum += num1[i] + num2[j];
+    //     }
+    //   }   return sum;
+
     public static void main(String[] args) {
         int [][] num = {{1,2,3,4},{5,6,7,8},{9,8,7,6},{5,4,3,2}};
         display(num);
@@ -54,3 +63,5 @@ public class transpose {
         // display(num); it will display the change array after transpose
     }
 }
+
+

@@ -1,4 +1,4 @@
-package practice;
+package practice1;
 import java.util.Scanner;
 public class third {
     // static void transpose(int n, int m){

@@ -1,4 +1,4 @@
-package practice;
+package practice1;
 import java.util.Scanner;
 public class hw {
     public static void main(String[] args) {

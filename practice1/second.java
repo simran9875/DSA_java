@@ -1,4 +1,4 @@
-package practice;
+package practice1;
 import java.util.Scanner;
 public class second{
     //average of the 3 values
@@ -49,3 +49,4 @@ public class second{
         sc.close();
     }
 }
+

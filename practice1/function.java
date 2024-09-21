@@ -1,4 +1,4 @@
-package practice;
+package practice1;
 import java.util.Scanner;
 public class function {
     // static int sumValue(int a ,int b){

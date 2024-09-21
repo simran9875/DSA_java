@@ -1,4 +1,7 @@
+package practice2;
+
 public class assignmentquestion {
+    
     
         // static int countDigits(int n){
         //     int count =0;
@@ -29,4 +32,6 @@ public class assignmentquestion {
             
 }
     
+
+
 
