@@ -12,7 +12,7 @@ public class Wrapper {
     // static public int public_num= 40;
 
     public static void main(String[] args) {
-        OOPs o1= new OOPs();
+        // OOPs o1= new OOPs();
         // o1.display();
         // System.out.println(o1.num);
         // OOPs o2= new OOPs();
