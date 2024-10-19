@@ -13,7 +13,7 @@ public class isarmstrong {
             int sum =0;
             int temp=n;
             while (temp!=0){
-                sum+=Math.pow(n%10, d);
+                sum+=Math.pow(temp%10, d);
                 temp/=10;
         }
             return sum == n;
