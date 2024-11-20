@@ -49,7 +49,7 @@ public class Hashing<K,V> {
 		if (lf > thf)
 			rehasing();
 	}
-
+	
 	private void rehasing() {
 		ArrayList<Node> nba = new ArrayList<>();
 		for (int i = 0; i < 2 * this.bucketArray.size(); i++)
