@@ -11,8 +11,8 @@ public class graphs1 {
 	}
 
 	public void AddEdge(int v1, int v2, int cost) {
-		map.get(v1).put(v2, cost);// v1--> map get kra then put v2 and Cost
-		map.get(v2).put(v1, cost);  //For Undirected
+		map.get(v1).put(v2, cost);
+		map.get(v2).put(v1, cost);
 	}
 
 	public boolean ContainsEdge(int v1, int v2) {
@@ -43,11 +43,9 @@ public class graphs1 {
 	public void removevertex(int v1) {
 
 		for (int key : map.get(v1).keySet()) {
-			// removeEdge(key, v1);
 			map.get(key).remove(v1);
 		}
 		map.remove(v1);
-
 	}
 
 	public void display() {

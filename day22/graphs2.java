@@ -4,7 +4,6 @@ public class graphs2 {
 	HashMap<Integer, HashMap<Integer, Integer>> map;
 
 	public graphs2(int v) {
-		// TODO Auto-generated constructor stub
 		this.map = new HashMap<>();
 		for (int i = 1; i <= v; i++) {
 			map.put(i, new HashMap<>());
@@ -14,7 +13,7 @@ public class graphs2 {
 
 	public void AddEdge(int v1, int v2, int cost) {
 
-		map.get(v1).put(v2, cost);// v1--> map get kra then put v2 and Cost
+		map.get(v1).put(v2, cost);
 		map.get(v2).put(v1, cost);
 	}
 
@@ -23,22 +22,17 @@ public class graphs2 {
 		HashSet<Integer> visited = new HashSet<>();
 		qq.add(src);
 		while (!qq.isEmpty()) {
-			// remove
 			int r = qq.remove();
-			// Ignore if Already Visited
 			if (visited.contains(r)) {
 				continue;
 			}
-			// visited mark
 			visited.add(r);
-			// work
 			if (r == dis) {
 				return true;
 			}
-			// nbrs add krna
-			for (int nbrs : map.get(r).keySet()) {
-				if (!visited.contains(nbrs)) {
-					qq.add(nbrs);
+			for (int side : map.get(r).keySet()) {
+				if (!visited.contains(side)) {
+					qq.add(side);
 				}
 			}
 
@@ -52,19 +46,14 @@ public class graphs2 {
 		HashSet<Integer> visited = new HashSet<>();
 		st.push(src);
 		while (!st.isEmpty()) {
-			// remove
 			int r = st.pop();
-			// Ignore if Already Visited
 			if (visited.contains(r)) {
 				continue;
 			}
-			// visited mark
 			visited.add(r);
-			// work
 			if (r == dis) {
 				return true;
 			}
-			// nbrs add krna
 			for (int nbrs : map.get(r).keySet()) {
 				if (!visited.contains(nbrs)) {
 					st.push(nbrs);
@@ -77,7 +66,6 @@ public class graphs2 {
 	}
 
 	public void BFT() {
-
 		LinkedList<Integer> qq = new LinkedList<>();
 		HashSet<Integer> visited = new HashSet<>();
 		
@@ -88,20 +76,15 @@ public class graphs2 {
 			
 			qq.add(src);
 			while (!qq.isEmpty()) {
-				// remove
 				int r = qq.remove();
-				// Ignore if Already Visited
 				if (visited.contains(r)) {
 					continue;
 				}
-				// visited mark
 				visited.add(r);
-				// work
 				System.out.print(r + " ");
-				// nbrs add krna
-				for (int nbrs : map.get(r).keySet()) {
-					if (!visited.contains(nbrs)) {
-						qq.add(nbrs);
+				for (int sides : map.get(r).keySet()) {
+					if (!visited.contains(sides)) {
+						qq.add(sides);
 					}
 				}
 
@@ -121,20 +104,15 @@ public class graphs2 {
 			}
 			st.push(src);
 			while (!st.isEmpty()) {
-				// remove
 				int r = st.pop();
-				// Ignore if Already Visited
 				if (visited.contains(r)) {
 					continue;
 				}
-				// visited mark
 				visited.add(r);
-				// work
 				System.out.print(r + " ");
-				// nbrs add krna
-				for (int nbrs : map.get(r).keySet()) {
-					if (!visited.contains(nbrs)) {
-						st.push(nbrs);
+				for (int sides : map.get(r).keySet()) {
+					if (!visited.contains(sides)) {
+						st.push(sides);
 					}
 				}
 
@@ -146,36 +124,30 @@ public class graphs2 {
 	public boolean isCycle() {
 		LinkedList<Integer> qq = new LinkedList<>();
 		HashSet<Integer> visited = new HashSet<>();
-		// count =0; For counting the Cycles
 		for (int src : map.keySet()) {
 			if (visited.contains(src)) {
 				continue;
 			}
 			qq.add(src);
 			while (!qq.isEmpty()) {
-				// remove
 				int r = qq.remove();
 				System.out.println("r"+r);
 				System.out.println("keyset:"+map.get(r).keySet());
 				System.out.println("queue:"+qq);
 				System.out.println("visited:"+visited);
-				// Ignore if Already Visited
 				if (visited.contains(r)) {
-					return true; // Do count++ and break for counting the no. of Cycles
+					return true; 
 				}
-				// visited mark
 				visited.add(r);
-
-				// nbrs add krna
-				for (int nbrs : map.get(r).keySet()) {
-					if (!visited.contains(nbrs)) {
-						qq.add(nbrs);
+				for (int sides : map.get(r).keySet()) {
+					if (!visited.contains(sides)) {
+						qq.add(sides);
 					}
 				}
 
 			}
 		}
-		return false; // Return count for Counting the Cycles
+		return false;
 
 	}
 
@@ -190,19 +162,14 @@ public class graphs2 {
 			count++;
 			qq.add(src);
 			while (!qq.isEmpty()) {
-				// remove
 				int r = qq.remove();
-				// Ignore if Already Visited
 				if (visited.contains(r)) {
 					continue;
 				}
-				// visited mark
 				visited.add(r);
-
-				// nbrs add krna
-				for (int nbrs : map.get(r).keySet()) {
-					if (!visited.contains(nbrs)) {
-						qq.add(nbrs);
+				for (int sides : map.get(r).keySet()) {
+					if (!visited.contains(sides)) {
+						qq.add(sides);
 					}
 				}
 
