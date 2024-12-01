@@ -6,3 +6,10 @@
 /Prims.class
 /Prims$1.class
 /Prims$PrimsPair.class
+/Dijkstra.class
+/DijkstraAlgo.class
+/DijkstraAlgo$1.class
+/DijkstraAlgo$DijkstraPair.class
+/BellManFordAlgo.class
+/BellMan_Ford.class
+/BellMan_Ford$EdgePair.class
