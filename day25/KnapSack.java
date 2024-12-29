@@ -8,8 +8,8 @@ public class KnapSack {
 		int weight= 10;
         int[] weights={1,2,3,4,5};
         int[] value= {2,1,2,1,3};
-        System.out.println(knapSack01(weights, value, weight));
-
+//        System.out.println(knapSack01(weights, value, weight));
+        System.out.println(rec(weights,value,weight,weights.length));
 	}
 
 	static int[][] dp;
@@ -38,6 +38,16 @@ public class KnapSack {
                 knapSack01RTD(weights, values, total, n - 1)
             );
         }
+    }
+    public static int rec(int[] weights, int[] values, int total, int n) {
+    	if(n==0 || total ==0) {
+    		return 0;
+    	}if(weights[n-1]>total) {
+    		return rec(weights,values,total,n-1);
+    	}else {
+    		return Math.max(values[n-1]+rec(weights,values,total-weights[n-1],n-1), 
+    				rec(weights, values, total, n - 1));
+    	}
     }
 
 }
