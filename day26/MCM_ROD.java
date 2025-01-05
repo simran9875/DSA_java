@@ -1,4 +1,4 @@
-package day25;
+package day26;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,6 @@ import java.util.Collections;
 
 public class MCM_ROD {
 	static int f(int i, int j, ArrayList<Integer> cuts, int[][] dp) {
-        // Base case
         if (i > j) {
             return 0;
         }   
@@ -27,7 +26,6 @@ public class MCM_ROD {
 
 
     static int costBU(int n, int c, ArrayList<Integer> cuts) {
-        // Modify the cuts array
         cuts.add(n);
         cuts.add(0);
         Collections.sort(cuts);
@@ -55,9 +53,8 @@ public class MCM_ROD {
 
         return dp[1][c];
     }
-    // Function to calculate the minimum cost
+    
     static int cost(int n, int c, ArrayList<Integer> cuts) {
-        // Modify the cuts array
         cuts.add(n);
         cuts.add(0);
         Collections.sort(cuts);
